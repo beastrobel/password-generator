@@ -22,54 +22,49 @@ function generatePassword() {
     }
 
   // Creates custom array with selected specs
-  var shuffleLowercase = passwordLowercase;
-  var shuffleUppercase = passwordUppercase;
-  var shuffleNumbers = passwordNumbers;
-  var shuffleSpecialCharacters = passwordSpecialCharacters;
-
-  if (shuffleLowercase == "Y" && shuffleUppercase == "Y" && shuffleNumbers == "Y" && shuffleSpecialCharacters == "Y"){
+  if (passwordLowercase == "Y" && passwordUppercase == "Y" && passwordNumbers == "Y" && passwordSpecialCharacters == "Y"){
     var selectedSpecs = [...lowerCase, ...upperCase, ...numbers, ...specialCharacters];
   }
-  else if (shuffleLowercase == "Y" && shuffleUppercase == "Y" && shuffleNumbers == "Y" && shuffleSpecialCharacters == "N"){
+  else if (passwordLowercase == "Y" && passwordUppercase == "Y" && passwordNumbers == "Y" && passwordSpecialCharacters == "N"){
     var selectedSpecs = [...lowerCase, ...upperCase, ...numbers];
   }
-  else if (shuffleLowercase == "Y" && shuffleUppercase == "Y" && shuffleNumbers == "N" && shuffleSpecialCharacters == "Y"){
+  else if (passwordLowercase == "Y" && passwordUppercase == "Y" && passwordNumbers == "N" && passwordSpecialCharacters == "Y"){
     var selectedSpecs = [...lowerCase, ...upperCase, ...specialCharacters];
   }
-  else if (shuffleLowercase == "Y" && shuffleUppercase == "N" && shuffleNumbers == "Y" && shuffleSpecialCharacters == "Y"){
+  else if (passwordLowercase == "Y" && passwordUppercase == "N" && passwordNumbers == "Y" && passwordSpecialCharacters == "Y"){
     var selectedSpecs = [...lowerCase, ...numbers, ...specialCharacters];
   }
-  else if (shuffleLowercase == "N" && shuffleUppercase == "Y" && shuffleNumbers == "Y" && shuffleSpecialCharacters == "Y"){
+  else if (passwordLowercase == "N" && passwordUppercase == "Y" && passwordNumbers == "Y" && passwordSpecialCharacters == "Y"){
     var selectedSpecs = [...upperCase, ...numbers, ...specialCharacters];
   }
-  else if (shuffleLowercase == "N" && shuffleUppercase == "N" && shuffleNumbers == "Y" && shuffleSpecialCharacters == "Y"){
+  else if (passwordLowercase == "N" && passwordUppercase == "N" && passwordNumbers == "Y" && passwordSpecialCharacters == "Y"){
     var selectedSpecs = [...numbers, ...specialCharacters];
   }
-  else if (shuffleLowercase == "N" && shuffleUppercase == "Y" && shuffleNumbers == "N" && shuffleSpecialCharacters == "Y"){
+  else if (passwordLowercase == "N" && passwordUppercase == "Y" && passwordNumbers == "N" && passwordSpecialCharacters == "Y"){
     var selectedSpecs = [...upperCase, ...specialCharacters];
   }
-  else if (shuffleLowercase == "N" && shuffleUppercase == "Y" && shuffleNumbers == "Y" && shuffleSpecialCharacters == "N"){
+  else if (passwordLowercase == "N" && passwordUppercase == "Y" && passwordNumbers == "Y" && passwordSpecialCharacters == "N"){
     var selectedSpecs = [...upperCase, ...numbers];
   }
-  else if (shuffleLowercase == "Y" && shuffleUppercase == "N" && shuffleNumbers == "N" && shuffleSpecialCharacters == "Y"){
+  else if (passwordLowercase == "Y" && passwordUppercase == "N" && passwordNumbers == "N" && passwordSpecialCharacters == "Y"){
     var selectedSpecs = [...lowerCase, ...specialCharacters];
   }
-  else if (shuffleLowercase == "Y" && shuffleUppercase == "N" && shuffleNumbers == "Y" && shuffleSpecialCharacters == "N"){
+  else if (passwordLowercase == "Y" && passwordUppercase == "N" && passwordNumbers == "Y" && passwordSpecialCharacters == "N"){
     var selectedSpecs = [...lowerCase, ...numbers];
   }
-  else if (shuffleLowercase == "Y" && shuffleUppercase == "Y" && shuffleNumbers == "N" && shuffleSpecialCharacters == "N"){
+  else if (passwordLowercase == "Y" && passwordUppercase == "Y" && passwordNumbers == "N" && passwordSpecialCharacters == "N"){
     var selectedSpecs = [...lowerCase, ...upperCase];
   }
-  else if (shuffleLowercase == "Y" && shuffleUppercase == "N" && shuffleNumbers == "N" && shuffleSpecialCharacters == "N"){
+  else if (passwordLowercase == "Y" && passwordUppercase == "N" && passwordNumbers == "N" && passwordSpecialCharacters == "N"){
     var selectedSpecs = [...lowerCase];
   }
-  else if (shuffleLowercase == "N" && shuffleUppercase == "Y" && shuffleNumbers == "N" && shuffleSpecialCharacters == "N"){
+  else if (passwordLowercase == "N" && passwordUppercase == "Y" && passwordNumbers == "N" && passwordSpecialCharacters == "N"){
     var selectedSpecs = [...upperCase];
   }
-  else if (shuffleLowercase == "N" && shuffleUppercase == "N" && shuffleNumbers == "Y" && shuffleSpecialCharacters == "N"){
+  else if (passwordLowercase == "N" && passwordUppercase == "N" && passwordNumbers == "Y" && passwordSpecialCharacters == "N"){
     var selectedSpecs = [...numbers];
   }
-  else if (shuffleLowercase == "N" && shuffleUppercase == "N" && shuffleNumbers == "N" && shuffleSpecialCharacters == "Y"){
+  else if (passwordLowercase == "N" && passwordUppercase == "N" && passwordNumbers == "N" && passwordSpecialCharacters == "Y"){
     var selectedSpecs = [...specialCharacters];
   }
   // Alerts user if no specs are selected
