@@ -7,7 +7,7 @@ The challenge was to make a Password Generator web application functional with J
 ## Usage
 
 The website’s URL is https://beastrobel.github.io/password-generator. A screenshot can be viewed below. In order to use the Password Generator, click the 'Generate Password' button and answer the prompts on the screen. The repository for this project can be found at https://github.com/beastrobel/password-generator.
-![screenshot of website](./assets/01-html-css-git-homework-demo.png)
+![screenshot of website](./assword-generator.png)
 
 ## Credits
 
