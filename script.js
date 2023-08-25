@@ -90,8 +90,9 @@ function generatePassword() {
   else {
     alert("No specs selected. Please start over");
   }
+
   // Shuffles arrays - used Stack Overflow as a reference
-  function shuffleLowerCase(){
+  function shuffleArray(){
     let currentIndex = selectedSpecs.length, randomIndex;
     while (currentIndex != 0) {
       randomIndex = Math.floor(Math.random() * currentIndex);
@@ -101,11 +102,22 @@ function generatePassword() {
     }
     return selectedSpecs;
   }
-shuffleLowerCase(selectedSpecs);
-console.log(selectedSpecs);
+  shuffleArray(selectedSpecs);
+   // Cuts down number of characters to password length
+   selectedSpecs.length=passwordLength;
+   console.log(selectedSpecs);
+   document.querySelector("#password").innerHTML = selectedSpecs.join("");
 }
 // Generates password on click
+
+
 generateBtn.addEventListener("click", generatePassword);
+//function writePassword() {
+ // var password = generatePassword();
+ // var passwordText = document.querySelector("#password");
+
+//  passwordText.value = password;
+//}
 
 // Creates password array
 //for (i=0; i<=passwordLength; i++){
