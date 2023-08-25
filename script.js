@@ -18,7 +18,6 @@ function generatePassword() {
     // Alerts user if password length is invalid
     else {
       alert("Invalid password length. Please try again.");
-      abort();
     }
 
   // Creates custom array with selected specs
